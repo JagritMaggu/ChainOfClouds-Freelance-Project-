@@ -1,25 +1,21 @@
 import React from "react";
 import Footer from "./Footer";
-import { motion } from "framer-motion";
+import { motion, transform } from "framer-motion";
 
 import { MessageCircle } from "lucide-react";
 function Services() {
-  const bgStyle = {
-    background: `url("/images/hookaClass.jpg") no-repeat center center fixed `,
-
-    position: "absolute",
-    minHeight: "100vh",
-    backgroundSize: "100% 100%",
-    
-    maxHeight:"200vh",
-
-    filter: "blur(3px)",
-
-    width: "100%",
-
-    margin: 0,
-    padding: 0,
-  };
+ const bgStyle = {
+  background: `url("/images/hookaClass.jpg") no-repeat center center`,
+  backgroundSize: "cover", 
+  width: "100%",
+  height: "100%",
+  position: "fixed", 
+ 
+  top: 0,
+  left: 0,
+  zIndex: -1,
+  filter: "blur(3px)",
+};
   const message = "Hi, I wanted to contact you regarding your services!";
   const encodedMessage = encodeURIComponent(message);
   const whatsAppLink = `https://wa.me/917895897270?text=${encodedMessage}`;
@@ -43,13 +39,13 @@ function Services() {
     },
   ];
   return (
-    <div className="min-h-screen min-w-screen max-h-[200vh] overflow-hidden">
+    <div className="relative min-h-screen w-full overflow-visible">
       <div style={bgStyle} className="overflow-hidden"> </div>
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="flex flex-col"
+        className="flex flex-col relative z-10 px-4 sm:px-6 md:px-10 py-10"
       >
 
         <div className="flex relative items-center mt-3 ml-10">
@@ -75,7 +71,7 @@ function Services() {
           the event ends.
         </motion.p>
         <motion.div
-          className="relative z-10 flex overflow-hidden items-center max-w-2xl"
+          className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-6"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
@@ -110,7 +106,7 @@ function Services() {
         </motion.div>
       </motion.div>
 
-      <div className="relative grid grid-cols-7 ml-8">
+      <div className="relative grid grid-cols-7 ml-12">
         {" "}
         <a
           href={whatsAppLink}
@@ -121,7 +117,7 @@ function Services() {
           Chat on WhatsApp
         </a>{" "}
       </div>
-      <div className="relative flex items-end justify-end ">
+      <div className="mt-10 ml-12">
         <Footer />
       </div>
     </div>
