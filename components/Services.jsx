@@ -52,7 +52,7 @@ function Services() {
       >
 
         <div className="flex relative items-center mt-3 ml-10">
-          <img src="/public/images/chainofclouds.jpg" className="h-10 w-10" />
+          <img src="/images/chainofclouds.jpg" className="h-10 w-10" />
           <h1 className="text-white ml-3">Welcome to Chain of Clouds</h1>
         </div>
         <motion.p
