@@ -106,7 +106,7 @@ function Services() {
         </motion.div>
       </motion.div>
 
-      <div className="relative grid grid-cols-7 ml-12">
+      <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50">
         {" "}
         <a
           href={whatsAppLink}
