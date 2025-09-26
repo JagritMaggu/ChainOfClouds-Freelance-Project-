@@ -18,7 +18,7 @@ function Services() {
 };
   const message = "Hi, I wanted to contact you regarding your services!";
   const encodedMessage = encodeURIComponent(message);
-  const whatsAppLink = `https://wa.me/917895897270?text=${encodedMessage}`;
+  const whatsAppLink = `https://wa.me/917409222324?text=${encodedMessage}`;
 
   const textStyle = {
     textDecoration: "none",
