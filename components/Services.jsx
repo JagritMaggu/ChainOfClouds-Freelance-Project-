@@ -16,7 +16,7 @@ function Services() {
   zIndex: -1,
   filter: "blur(3px)",
 };
-  const message = "Hi, I wanted to contact you regarding your services!";
+  const message = "Hi, I wanted to contact you regarding your shisha services!";
   const encodedMessage = encodeURIComponent(message);
   const whatsAppLink = `https://wa.me/917409222324?text=${encodedMessage}`;
 
@@ -88,20 +88,21 @@ function Services() {
             </p>
             <h3 className="text-white">Corporate Parties</h3>
             <p className="text-white">
-              Make your private parties and get-togethers unforgettable with our
-              customized shisha experience. Whether it’s a birthday, house
-              party, or an intimate gathering with friends, we bring stylish
-              setups and a variety of premium flavors to create the perfect
-              atmosphere for relaxation and enjoyment.
-            </p>
-            <h3 className="text-white">Private Gatherings</h3>
-            <p className="text-white">
               Enhance your corporate functions with a sophisticated shisha
               lounge experience. Perfect for company parties, networking
               sessions, and team celebrations, our professional service provides
               a modern and classy touch that encourages socializing and leaves a
               lasting impression on your guests.
             </p>
+            <h3 className="text-white">Private Gatherings</h3>
+            <p className="text-white">
+              Make your private parties and get-togethers unforgettable with our
+              customized shisha experience. Whether it’s a birthday, house
+              party, or an intimate gathering with friends, we bring stylish
+              setups and a variety of premium flavors to create the perfect
+              atmosphere for relaxation and enjoyment.
+            </p>
+            
           </div>
         </motion.div>
       </motion.div>
@@ -117,7 +118,7 @@ function Services() {
           Chat on WhatsApp
         </a>{" "}
       </div>
-      <div className="mt-10 ml-12">
+      <div className="mt-6 ml-12">
         <Footer />
       </div>
     </div>
