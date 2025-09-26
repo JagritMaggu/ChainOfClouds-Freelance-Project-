@@ -10,7 +10,8 @@ function Services() {
     position: "absolute",
     minHeight: "100vh",
     backgroundSize: "100% 100%",
-    height: "100vh",
+    
+    maxHeight:"200vh",
 
     filter: "blur(3px)",
 
@@ -42,8 +43,8 @@ function Services() {
     },
   ];
   return (
-    <div className="min-h-screen min-w-screen overflow-hidden">
-      <div style={bgStyle}> </div>
+    <div className="min-h-screen min-w-screen max-h-[200vh] overflow-hidden">
+      <div style={bgStyle} className="overflow-hidden"> </div>
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
